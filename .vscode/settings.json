@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "ft2build.h": "c",
+        "ftheader.h": "c",
+        "ftsystem.h": "c",
+        "new": "cpp",
+        "array": "cpp",
+        "*.tcc": "cpp",
+        "deque": "cpp",
+        "string": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "vector": "cpp",
+        "memory": "cpp",
+        "random": "cpp",
+        "initializer_list": "cpp",
+        "lv_freetype.h": "c"
+    }
+}
