@@ -8,6 +8,9 @@
 
 # 前言
 
+![HeadFrame](https://chaosgoo-pic.oss-cn-shanghai.aliyuncs.com/blog_pic/lv_ft/esp_lvgl_ft_vf.gif)
+
+
 [上篇](https://blog.chaosgoo.com/2021/12/12/FreeType-and-LVGL/)中介绍了如何在在ESP32上运行的让LVGL,现在终于可以开始奔着[第一篇](https://blog.chaosgoo.com/2021/12/12/FreeType-and-LVGL/)文章末尾的效果去了.
 
 ## 准备工作
@@ -15,7 +18,9 @@
 ### 软件准备
 
 访问[https://download.savannah.gnu.org/releases/freetype/](https://download.savannah.gnu.org/releases/freetype/)下载源码,解压后重命名为freetype并复制到项目lib文件夹下
+
 我下载的是目前(2021.12.11)最新版本freetype-2.11.1.tar.gz(较老的版本不支持可变字体操作)
+
 然后去这个repo获取SD和SPI库,复制到项目lib文件夹下
 ````bash
 .
@@ -103,10 +108,10 @@ license=GNU
 
 和上篇相比,多了一个SD卡模块.
 
-~~~起初也尝试了直接把字体文件存在SPIFF里面,减少涉及到的硬件,奈何速度慢的感人,于是回到这里重新写了SD卡版本.~~~
+起初也尝试了直接把字体文件存在SPIFF里面,减少涉及到的硬件,奈何速度慢的感人,于是回到这里重新写了SD卡版本.
 
-名称 | 数量 | 备注 | 图例 |
-:-: | :-: | :-:
+名称|数量|备注|图例
+-|-|-|-
 ESP32 开发板 | 1 | \ | <img src="https://chaosgoo-pic.oss-cn-shanghai.aliyuncs.com/blog_pic/lv_ft/esp32.jpg?x-oss-process=style/compress_50" width="240px" style="padding:30px"/>
 1.54寸LCD | 1 | 驱动ST7789,分辨率240x240 |  <img src="https://chaosgoo-pic.oss-cn-shanghai.aliyuncs.com/blog_pic/lv_ft/lcd.jpg?x-oss-process=style/compress_50" width="240px" style="padding:30px"/>
 杜邦线若干 | N | \ | <img src="https://chaosgoo-pic.oss-cn-shanghai.aliyuncs.com/blog_pic/lv_ft/wire.jpg?x-oss-process=style/compress_50" width="240px" style="padding:30px"/>
