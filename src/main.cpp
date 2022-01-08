@@ -74,7 +74,7 @@ bool SD_Init() {
 void setup() {
   Serial.begin(115200);  // Set to a high rate for fast image transfer to a PC
 
-  Port_Init();SD
+  Port_Init();
   if (!SD_Init()) {
     Serial.println("SD Mount Failed");
   };
